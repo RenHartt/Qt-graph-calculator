@@ -31,8 +31,8 @@ Qt Calculator est une application graphique développée en **C++** avec **Qt**,
    ```
 
 <p align="center">
-  <img src="" alt="" width="49%">
-  <img src="" alt="" width="49%">
+  <img src="img/calc.png" alt="calc" width="49%">
+  <img src="img/scientific.png" alt="scientific" width="49%">
 </p>
 
-![]()
+![graph](img/graph.png)
