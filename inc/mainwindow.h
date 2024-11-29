@@ -22,9 +22,11 @@ private slots:
   void onEqualClicked();
   void onClearClicked();
   void onScientificClicked();
+
   void onTraceClicked();
   void onAddExpression();
   void onDelExpression();
+  void onExpressionEdited(QListWidgetItem *item);
 
 private:
   void setupStandardTab();
@@ -32,16 +34,17 @@ private:
   void setupGraphTab();
 
   void updateGraph();
+  double evaluateExpression(const QString &expression, double xValue);
 
-  QTabWidget  *tabWidget;
-  QLineEdit   *displayStandard;
-  QLineEdit   *displayScientific;
+  QTabWidget *tabWidget;
+  QLineEdit *displayStandard;
+  QLineEdit *displayScientific;
   QCustomPlot *customPlot;
 
   QString pendingOperator;
   QString leftOperand;
   QString rightOperand;
-  bool    operatorPending;
+  bool operatorPending;
 
   QLineEdit *xMinInput;
   QLineEdit *xMaxInput;
@@ -54,5 +57,5 @@ private:
   double yMax;
 
   QListWidget *expressionList;
-  QLineEdit   *expressionInput;
+  QLineEdit *expressionInput;
 };
