@@ -32,8 +32,7 @@ void MainWindow::setupStandardTab() {
     button = new QPushButton(op, this);
     button->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     gridLayout->addWidget(button, row++, 3);
-    connect(button, &QPushButton::clicked, this,
-            &MainWindow::onOperatorClicked);
+    connect(button, &QPushButton::clicked, this, &MainWindow::onOperatorClicked);
   }
 
   QString clear = "c";

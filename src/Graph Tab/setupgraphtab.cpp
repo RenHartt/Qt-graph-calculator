@@ -46,7 +46,7 @@ bool calculatePower(QString &expression) {
     double result;
 
     if (qFuzzyCompare(
-            right, static_cast<int>(right))) { // Évite les erreurs flottantes
+            right, static_cast<int>(right))) {
       if (left < 0 && static_cast<int>(right) % 2 != 0) {
         result = -pow(-left, right);
       } else {
@@ -60,7 +60,6 @@ bool calculatePower(QString &expression) {
       result = pow(left, right);
     }
 
-    // Remplacement de l'expression par le résultat
     expression.replace(match.captured(0), QString::number(result, 'g', 15));
     return true;
   }
@@ -140,8 +139,7 @@ double calculateRecursive(const QString &expression) {
   throw std::invalid_argument("Non valid expression.");
 }
 
-double MainWindow::evaluateExpression(const QString &expression,
-                                      double xValue) {
+double MainWindow::evaluateExpression(const QString &expression, double xValue) {
   QString parsedExpression = expression.simplified();
   parsedExpression.replace("x", QString::number(xValue));
 
@@ -176,8 +174,7 @@ void MainWindow::updateGraph() {
 
   double yMin = yMinInput->text().toDouble();
   double yMax = yMaxInput->text().toDouble();
-  customPlot->xAxis->setRange(xMinInput->text().toDouble(),
-                              xMaxInput->text().toDouble());
+  customPlot->xAxis->setRange(xMinInput->text().toDouble(), xMaxInput->text().toDouble());
   customPlot->yAxis->setRange(yMin, yMax);
 
   customPlot->replot();
@@ -236,8 +233,7 @@ void MainWindow::setupGraphTab() {
 
   QPushButton *plotButton = new QPushButton("Tracer", this);
   leftLayout->addWidget(plotButton);
-  connect(plotButton, &QPushButton::clicked, this,
-          &MainWindow::onAddExpression);
+  connect(plotButton, &QPushButton::clicked, this, &MainWindow::onAddExpression);
 
   leftWidget->setLayout(leftLayout);
 
@@ -248,18 +244,15 @@ void MainWindow::setupGraphTab() {
   rightLayout->addWidget(label);
 
   expressionList = new QListWidget(this);
-  expressionList->setEditTriggers(QAbstractItemView::DoubleClicked |
-                                  QAbstractItemView::EditKeyPressed);
+  expressionList->setEditTriggers(QAbstractItemView::DoubleClicked | QAbstractItemView::EditKeyPressed);
   expressionList->setSelectionMode(QAbstractItemView::SingleSelection);
   expressionList->setFocusPolicy(Qt::StrongFocus);
-  connect(expressionList, &QListWidget::itemChanged, this,
-          &MainWindow::updateGraph);
+  connect(expressionList, &QListWidget::itemChanged, this, &MainWindow::updateGraph);
   rightLayout->addWidget(expressionList);
 
   QPushButton *removeButton = new QPushButton("Delete", this);
   rightLayout->addWidget(removeButton);
-  connect(removeButton, &QPushButton::clicked, this,
-          &MainWindow::onDelExpression);
+  connect(removeButton, &QPushButton::clicked, this, &MainWindow::onDelExpression);
 
   rightWidget->setLayout(rightLayout);
 

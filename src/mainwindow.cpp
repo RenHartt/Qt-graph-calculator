@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
   setupStandardTab();
   setupScientificTab();
   setupGraphTab();
+  setupSolverTab();
 
   setCentralWidget(tabWidget);
   setWindowTitle("Scientific Calculator");

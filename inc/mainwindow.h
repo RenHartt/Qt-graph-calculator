@@ -28,10 +28,13 @@ private slots:
   void onDelExpression();
   void onExpressionEdited(QListWidgetItem *item);
 
+  void onSolveEquation();
+
 private:
   void setupStandardTab();
   void setupScientificTab();
   void setupGraphTab();
+  void setupSolverTab();
 
   void updateGraph();
   double evaluateExpression(const QString &expression, double xValue);
@@ -58,4 +61,7 @@ private:
 
   QListWidget *expressionList;
   QLineEdit *expressionInput;
+
+  QLineEdit *equationInput;
+  QTextEdit *solutionOutput;
 };
