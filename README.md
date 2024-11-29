@@ -20,7 +20,7 @@ Le projet inclut des fonctionnalités supplémentaires telles que le calcul scie
 ### Pré-requis
 - **Qt 5** ou ultérieur.
 - Un compilateur C++ compatible.
-- Outils de développement Qt (qmake, make).
+- Outils de développement Qt (Cmake, make).
 
 ### Usage
    ```
