@@ -13,6 +13,7 @@ Le projet inclut des fonctionnalités supplémentaires telles que le calcul scie
 - 🟢 **Opérations scientifiques** : Trigonométrie, logarithmes, puissance, etc.
 - 🟢 **Générateur de graphiques** : Affiche le graphe d'une expression mathématique donnée.  
   Zoom et deplacement a l'aide du curseur
+- 🟢 **Solveur d'equation lineaire** : ex: "3x - 2 = 0".
 
 ---
 
@@ -39,3 +40,5 @@ Le projet inclut des fonctionnalités supplémentaires telles que le calcul scie
 </p>
 
 ![graph](img/graph.png)
+
+![equation](img/equation.png)
