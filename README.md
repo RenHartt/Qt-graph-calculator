@@ -11,7 +11,8 @@ Le projet inclut des fonctionnalités supplémentaires telles que le calcul scie
 
 - 🟢 **Calculs basiques** : Addition, soustraction, multiplication, division.
 - 🟢 **Opérations scientifiques** : Trigonométrie, logarithmes, puissance, etc.
-- 🟢 **Générateur de graphiques** : Affiche le graphe d'une expression mathématique donnée.
+- 🟢 **Générateur de graphiques** : Affiche le graphe d'une expression mathématique donnée.  
+  Zoom et deplacement a l'aide du curseur
 
 ---
 
