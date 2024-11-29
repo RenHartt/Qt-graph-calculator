@@ -1,7 +1,9 @@
 # Qt Calculator
 
 **Description :**  
-Qt Calculator est une application graphique développée en **C++** avec **Qt**, offrant une interface intuitive pour effectuer des calculs basiques et avancés. Le projet inclut des fonctionnalités supplémentaires telles que le calcul scientifique, un résolveur d'équations, et un générateur de graphiques.
+Qt Calculator est une application graphique développée en **C++** avec **Qt**,  
+offrant une interface intuitive pour effectuer des calculs basiques et avancés.  
+Le projet inclut des fonctionnalités supplémentaires telles que le calcul scientifique, et un générateur de graphiques.
 
 ---
 
