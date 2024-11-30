@@ -36,9 +36,7 @@ Le projet inclut des fonctionnalités supplémentaires telles que le calcul scie
 
 <p align="center">
   <img src="img/calc.png" alt="calc" width="49%">
-  <img src="img/scientific.png" alt="scientific" width="49%">
+  <img src="img/solver.png" alt="solver" width="49%">
 </p>
 
 ![graph](img/graph.png)
-
-![equation](img/equation.png)
